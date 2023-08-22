@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="test1.css" rel="stylesheet" type="text/css">
+<header>
+    <script defer src = "test1.js"></script>
+    <body onpageshow="myFun()">
+        <main>
+            <form id="form" action="mailto:yan12@my.centennialcollege.ca" method="post">
+                <br><br>
+            <h1>Billing Address</h1>
+        <fieldset>
+            <p>
+                <label for="FName">First Name</label>
+                <input id="txtFName"type="txtFName" name="txtFName" size="25" type="txt" required="required" placeholder="First Name">
+            </p>
+            <p>
+                <label for="LName">Last Name</label>
+                <input id="txtLName"type="txtLName" name="txtLName" size="25" type="txt" required="required" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="StreetAdress">Street Address</label>
+                <input id="txtAddress"type="txtAddress" name="Address" size="50" type="txt" required="required" placeholder="Street Address">
+            </p>
+            <p>
+                <label for="City">City</label>
+                <input id="txtCity"type="txtCity" name="City" size="50" type="txt" required="required" placeholder="City">
+            </p>      
+            <p>
+                <label for="State">State</label>
+                <select name="Select State" id="myState" required="required">
+                    <option value="1">NM</option>
+                    <option value="2">ON</option>
+                    <option value="3">BT</option>
+                </select>
+            </p>
+            <p>
+                <label for="Zip">Zip Code</label>
+                <input type="text" id="Zip" placeholder="12345" pattern="[1-9]{5}" required="required">
+            <p>
+            <p>
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="text" id="Phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required">            </p>
+            <p>    
+        </fieldset>
+        <!-- //<form id="form2" action="mailto:yan12@my.centennialcollege.ca" method="post"> -->
+        <br><br>
+        <h1>Dlivery Address</h1>
+        <p class="option">
+            <input type="checkbox" id="infoOption" name="infoOption">
+          <label for="infoOption" class="optionLabel">the same as Billing Address</label>
+        </p>   
+        <fieldset>
+            <p>
+                <label for="FName">First Name</label>
+                <input id="DFName"type="txtFName" name="txtFName" size="25" type="txt" required="required" placeholder="First Name">
+            </p>
+            <p>
+                <label for="LName">Last Name</label>
+                <input id="DLName"type="txtLName" name="txtLName" size="25" type="txt" required="required" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="StreetAdress">Street Address</label>
+                <input id="DAddress"type="txtAddress" name="Address" size="50" type="txt" required="required" placeholder="Street Address">
+            </p>
+            <p>
+                <label for="City">City</label>
+                <input id="DCity"type="txtCity" name="City" size="50" type="txt" required="required" placeholder="City">
+            </p>      
+            <p>
+                <label for="State">State</label>
+                <select name="Select State" id="DmyState" >
+                    <option value="1">NM</option>
+                    <option value="2">ON</option>
+                    <option value="3">BT</option>
+                </select>
+            </p>
+            <p>
+                <label for="Zip">Zip Code</label>
+                <input type="text" id="DZip" required="required" placeholder="12345" pattern="[1-9]{5}">
+            <p>
+            <p>
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="text" id="DPhone" required="required" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">            </p>
+            <p>    
+        </fieldset>
+        <p>
+                <input id="submit"name="btnSubmit" onclick="submitForm()"type="submit" value="Submit">
+        </p>
+        </form>
+        </main>
+        <footer>
+            <i><h6>&copy;&nbsp; Copyright Yein An 301316062 - COMP125 Client side web development - Summber 2023</h6>
+            <h6>Test 1&copy;&nbsp;</i>
+        </footer>
+    </body>
+</header>
+</html>
+    
